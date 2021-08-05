@@ -1,10 +1,6 @@
-import React from 'react'
-import ReactDom from 'react-dom'
+import React from "react";
+import ReactDom from "react-dom";
+import App from "./App";
+import './index.css'
 
-
-ReactDom.render(
-  <div>
-
-  </div>,
-  document.querySelector('.weather-widget')
-)
+ReactDom.render(<App />, document.querySelector("weather-widget"));

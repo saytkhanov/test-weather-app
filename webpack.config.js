@@ -20,7 +20,7 @@ module.exports = {
     new HTMPWebpackPlugin({
       template: './index.html'
     }),
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
   ],
   module: {
     rules: [
@@ -33,7 +33,7 @@ module.exports = {
         use: ['file-loader']
       },
       {
-        test: /\.m?js$/,
+        test: /\.js$|jsx/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
