@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import Weather from "./Weather";
 
 function Weathers({ cities, openSettings }) {
-  // const temp = Math.floor(cities.main?.temp - 273.15);
-  // const feels = Math.floor(cities.main?.feels_like - 273.15);
-  // const weather = cityWeather.weather?.main.map(item => item)
 
   return (
     <div>
