@@ -22,7 +22,7 @@ ___
 
 Основные технологии, которые я использовал:
 - ![Webpack](https://img.shields.io/badge/-Webpack-red?style=for-the-badge)
-- ![React](https://img.shields.io/badge/-React-red?style=for-the-badge)
+- ![React](https://img.shields.io/badge/-React-yellow?style=for-the-badge)
 - ![Babel](https://img.shields.io/badge/-Babel-purple?style=for-the-badge)
  ___
 
