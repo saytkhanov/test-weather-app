@@ -1,0 +1,37 @@
+.container-card {
+    width: 300px;
+    height: 300px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.weather-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.windAndPressure {
+    display: flex;
+    justify-content: center;
+}
+.wind {
+    margin-right: 40px;
+}
+.icon-settings {
+    margin-left: 270px;
+}
+.header-settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 30px;
+    border-radius: 2px;
+    margin-top: 20px;
+    cursor: grab;
+}
