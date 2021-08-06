@@ -5,7 +5,7 @@ function Weather({ city, key }) {
   const [weather, setWeather] = useState({});
   const temp = Math.floor(weather.main?.temp - 273.15);
   const feels = Math.floor(weather.main?.feels_like - 273.15);
-  console.log(weather)
+  console.log(weather);
 
   useEffect(() => {
     fetch(getApiUrl(city))
@@ -38,10 +38,13 @@ function Weather({ city, key }) {
         </div>
       </div>
       <div className="other-info">
-        <p>Feels like - {feels}&deg;C,   {weather.weather[0].description.toUpperCase()}</p>
+        <p>
+          Feels like - {feels}&deg;C,{" "}
+          {weather.weather[0].description.toUpperCase()}
+        </p>
       </div>
       <div className="main-weather-info">
-        <div style={{marginRight: 40}}>
+        <div style={{ marginRight: 40 }}>
           <p>{weather.wind?.speed}m/s SSE</p>
         </div>
         <div>

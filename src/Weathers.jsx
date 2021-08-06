@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Weather from "./Weather";
 
 function Weathers({ cities, openSettings }) {
-
   return (
     <div>
       <div className="icon-settings">

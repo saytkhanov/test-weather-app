@@ -18,12 +18,16 @@ function App() {
     setLoading(true);
     if (cities.length === 0) {
       navigator.geolocation.getCurrentPosition((position) => {
-        fetch(getApiUrl(position.coords))
-          .then((res) => res.json())
-          .then((data) => {
-            setCities([...cities, data.name]);
-            setLoading(false);
-          });
+        try {
+          fetch(getApiUrl(position.coords))
+            .then((res) => res.json())
+            .then((data) => {
+              setCities([...cities, data.name]);
+              setLoading(false);
+            });
+        } catch (e) {
+          console.log(e.message);
+        }
       });
     } else {
       setLoading(false);

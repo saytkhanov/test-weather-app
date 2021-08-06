@@ -10,7 +10,7 @@ function Settings({ setSettingsOpened, setCities, cities }) {
   const handleAddCities = (ev) => {
     ev.preventDefault();
     if (cities.indexOf(input) !== -1) {
-      return
+      return;
     } else if (input.length > 0) {
       setCities([...cities, input]);
       setInput("");
