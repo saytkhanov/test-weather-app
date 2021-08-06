@@ -18,7 +18,9 @@ function Weathers({ cities, openSettings }) {
       </div>
       {cities.map((city) => {
         return (
-          <Weather openSettings={openSettings} city={city} key={city.id} />
+          <div key={city}>
+          <Weather openSettings={openSettings} city={city} />
+          </div>
         );
       })}
     </div>

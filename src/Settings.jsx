@@ -53,7 +53,7 @@ function Settings({ setSettingsOpened, setCities, cities }) {
       </div>
       {cities.map((city, id) => {
         return (
-          <div className="card">
+          <div className="card" key={city}>
             <div>
               <button> ||| </button>
             </div>
